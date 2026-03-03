@@ -14,7 +14,11 @@ const scenarios = [
     content: [
       {
         title: 'Do Not Open the Door',
-        text: 'You are not required to open the door unless they have a judicial warrant signed by a judge.'
+        text: 'You are not required to open the door unless they have a judicial warrant signed by a judge. Talking through a closed door is safer.'
+      },
+      {
+        title: 'Red Flag: "Just want to talk"',
+        text: 'If they say they "just want to ask a few questions," do not open. This is a common tactic to get inside.'
       },
       {
         title: 'Ask for a Warrant',
@@ -51,6 +55,34 @@ const scenarios = [
       {
         title: 'Do Not Consent to Search',
         text: 'State clearly: "I do not consent to a search of my belongings."'
+      },
+      {
+        title: 'Do Not Lie',
+        text: 'It is a crime to lie to a federal agent. It is better to remain silent than to lie.'
+      }
+    ]
+  },
+  {
+    id: 'car',
+    title: 'In Your Car',
+    icon: <User size={24} />, // Reusing User icon or could import Car if available, sticking to existing imports for safety
+    color: 'bg-orange-500',
+    content: [
+      {
+        title: 'Stop Safely',
+        text: 'Pull over to a safe place. Turn off the engine, turn on the internal light, open the window part way, and place your hands on the steering wheel.'
+      },
+      {
+        title: 'Drivers vs Passengers',
+        text: 'Drivers must show license, registration, and insurance. Passengers generally do not have to show ID unless suspected of a crime.'
+      },
+      {
+        title: 'Do Not Consent to Search',
+        text: 'If an officer asks to search your car, you can say "I do not consent to a search."'
+      },
+      {
+        title: 'Remain Silent',
+        text: 'You do not have to answer questions about your immigration status or where you are going.'
       }
     ]
   },
@@ -67,6 +99,10 @@ const scenarios = [
       {
         title: 'Do Not Sign Anything',
         text: 'Do not sign any deportation papers or "voluntary departure" forms without a lawyer.'
+      },
+      {
+        title: 'Right to Medical Care',
+        text: 'If you are injured or ill, you have the right to medical attention. Tell an officer immediately.'
       },
       {
         title: 'Contact Your Consulate',

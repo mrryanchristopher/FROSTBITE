@@ -89,6 +89,45 @@ export default function IceInfoPage() {
           </div>
         </section>
 
+        {/* Section 4: Tactics & Ruses */}
+        <section className="bg-white p-6 rounded-3xl shadow-lg border border-slate-100">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="bg-purple-100 p-3 rounded-xl text-purple-600">
+              <AlertTriangle size={24} />
+            </div>
+            <h2 className="text-xl font-bold">Tactics & Ruses</h2>
+          </div>
+          <div className="space-y-4 text-slate-600 leading-relaxed">
+            <p>
+              <strong>ICE agents are allowed to lie.</strong> They may use &quot;ruses&quot; to trick you into opening the door or revealing your location.
+            </p>
+            <ul className="list-disc list-inside space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <li><strong>The &quot;Police&quot; Trick:</strong> They may identify themselves simply as &quot;police&quot; or &quot;officers&quot; without specifying &quot;immigration.&quot;</li>
+              <li><strong>The &quot;Probation&quot; Trick:</strong> They may claim they are looking for a suspect or doing a probation check.</li>
+              <li><strong>The &quot;Car Accident&quot; Trick:</strong> They may claim a family member was in an accident to get you to come outside.</li>
+            </ul>
+            <p className="text-sm font-bold text-slate-800">
+              Safety Rule: Never open the door unless you see a judicial warrant slid under it. Talk through the closed door.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 5: Collateral Arrests */}
+        <section className="bg-white p-6 rounded-3xl shadow-lg border border-slate-100">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="bg-slate-100 p-3 rounded-xl text-slate-600">
+              <Shield size={24} />
+            </div>
+            <h2 className="text-xl font-bold">Collateral Arrests</h2>
+          </div>
+          <p className="text-slate-600 leading-relaxed">
+            ICE may go to a location looking for one specific person, but they can question and arrest <strong>anyone else</strong> they encounter if they have &quot;probable cause&quot; to believe that person is undocumented.
+          </p>
+          <div className="mt-3 bg-red-50 p-3 rounded-lg border border-red-100 text-red-800 text-sm font-medium">
+            This is why remaining silent and not carrying foreign documents (like a passport from another country) in public is critical.
+          </div>
+        </section>
+
       </div>
     </div>
   );

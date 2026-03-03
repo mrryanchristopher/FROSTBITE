@@ -21,6 +21,18 @@ const myths = [
     fact: "False. Running can be used as a reason to arrest you. Stay calm and do not run."
   },
   {
+    myth: "I can fight back if they try to arrest me.",
+    fact: "False. Do not physically resist arrest. It can lead to criminal charges and injury. Fight your case in court, not on the street."
+  },
+  {
+    myth: "They can't arrest me at church or school.",
+    fact: "False. While ICE has a policy to avoid 'sensitive locations' like schools, hospitals, and places of worship, it is not a law. They can still make arrests there in certain situations."
+  },
+  {
+    myth: "If I speak English perfectly, they won't stop me.",
+    fact: "False. ICE can stop anyone they suspect. Speaking English does not grant immunity, though it may help in communication."
+  },
+  {
     myth: "I have to sign whatever they give me.",
     fact: "False. Do not sign anything without speaking to a lawyer first. You could be signing your own deportation order."
   }

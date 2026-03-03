@@ -34,8 +34,42 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <div className="px-6 -mt-8 relative z-20 space-y-4">
+      <div className="px-6 -mt-8 relative z-20 space-y-6">
         
+        {/* Safety Warning */}
+        <div className="bg-yellow-500 text-slate-900 p-4 rounded-2xl shadow-lg border-2 border-yellow-400 flex items-start gap-3">
+          <AlertTriangle className="shrink-0 mt-1" size={24} />
+          <div>
+            <h3 className="font-black uppercase text-sm mb-1">Safety First</h3>
+            <p className="text-sm font-medium leading-tight">
+              Your safety is the priority. Do not physically resist, run, or lie. Use this app to assert your rights calmly.
+            </p>
+          </div>
+        </div>
+
+        {/* Language Selector */}
+        <div className="bg-white p-4 rounded-3xl shadow-lg border border-slate-100">
+          <h3 className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-3 text-center">Select Language</h3>
+          <div className="grid grid-cols-3 gap-2">
+            {[
+              { code: 'en', label: 'English' },
+              { code: 'es', label: 'Español' },
+              { code: 'zh', label: '中文' },
+              { code: 'tl', label: 'Tagalog' },
+              { code: 'vi', label: 'Tiếng Việt' },
+              { code: 'fr', label: 'Français' },
+            ].map((lang) => (
+              <Link 
+                key={lang.code}
+                href={`/emergency-card?lang=${lang.code}`}
+                className="bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-200 text-slate-700 hover:text-blue-600 rounded-xl p-2 text-center text-sm font-bold transition-colors"
+              >
+                {lang.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Emergency Action */}
         <Link href="/emergency-card" className="block">
           <motion.div 
@@ -89,8 +123,31 @@ export default function Home() {
           color="bg-slate-800"
         />
 
-        <div className="text-center text-slate-400 text-xs mt-8 pb-8">
+        <div className="text-center text-slate-400 text-xs mt-8 pb-8 space-y-4">
           <p>Disclaimer: This app provides general information and is not legal advice. Consult with a qualified attorney for legal advice.</p>
+          
+          <div className="pt-4 border-t border-slate-200/50">
+            <p className="mb-2">
+              Frostbite created and owned by{' '}
+              <a 
+                href="https://mediamultitool.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline font-bold"
+              >
+                Media Multi-Tool
+              </a>
+            </p>
+            
+            <a 
+              href="https://buymeacoffee.com/mediamultitool" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#FFDD00] text-black px-4 py-2 rounded-full font-bold text-sm hover:bg-[#FFDD00]/90 transition-colors shadow-sm"
+            >
+              <span>☕</span> Buy Me A Coffee
+            </a>
+          </div>
         </div>
 
       </div>
